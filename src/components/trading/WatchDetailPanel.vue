@@ -15,7 +15,7 @@
               symbol: 'BITFINEX:BTCUSD',
               width: '100%',
               height: 300,
-              theme: 'light',
+              theme: 'dark',
               style: 2,
               withdateranges: true,
             }"/>
@@ -27,7 +27,7 @@
           symbol: 'BITFINEX:BTCUSD',
           width: '100%',
           height: '100%',
-          theme: 'light',
+          theme: 'dark',
           style: 2,
           hide_side_toolbar: false,
           withdateranges: true,
@@ -71,12 +71,12 @@ export default {
 .trading-chart-panel {
   width: 100%;
   height: 100%;
-  background-color: #ccc;
+  background-color: #444;
   display: flex;
   flex-direction: column;
   .head {
     border: 0;
-    background-color: #ccc;
+    background-color: #444;
     padding-left: 8px;
     padding-right: 8px;
     height: 32px;
@@ -86,9 +86,11 @@ export default {
     margin-top: 0;
     height: calc(100% - 40px);
     display: flex;
+    background: #333;
     flex-direction: column;
     .divider {
-      margin-top: 8px;
+      height: 8px;
+      background: #444;
     }
     .scroll-panel {
       flex: 1 1 auto;
@@ -96,7 +98,6 @@ export default {
       .chart-section {
         width: 100%;
         height: calc(100% - 110px);
-        background: #fff;
       }
     }
   }

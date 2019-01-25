@@ -43,7 +43,6 @@ export default {
     font-size: 18px;
   }
   span {
-    color: #333;
     white-space: nowrap;
   }
 }

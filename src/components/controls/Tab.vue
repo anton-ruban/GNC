@@ -57,10 +57,10 @@ export default {
     font-size: 14px;
     cursor: pointer;
     &:hover {
-      color: #111;
+      color: #eee;
     }
     &.active {
-      color: #111;
+      color: #eee;
     }
   }
   .item-list {
@@ -70,7 +70,7 @@ export default {
     width: 150px;
     .list-item {
       padding: 2px 8px;
-      color: #111;
+      color: #eee;
       height: 35px;
       display: flex;
       align-items: center;

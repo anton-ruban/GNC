@@ -46,7 +46,7 @@ export default {
     align-items: center;
     justify-content: center;
     background: #fdfbfb;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #444;
     .nav-bar {
       margin: 0 auto;
       display: flex;
@@ -60,7 +60,7 @@ export default {
         color: #888;
         list-style-type: none;
         &:hover {
-          color: #111;
+          color: #eee;
         }
       }
     }

@@ -1,12 +1,9 @@
 <template>
-  <header class="has-signupbanner">
-    <a target="_blank" href="#" class="signupbanner">
-    点击这里开立账户并开始交易
-    </a>
+  <header>
     <div class="masthead">
       <div class="logos">
         <img alt="logo" src="../../assets/logo.png"/>
-        <div class="app-title">Intelligent Pricing Engine</div>
+        <div class="app-title">银行柜台系统连接平台</div>
       </div>
       <MainMenu/>
       <ActionMenu/>
@@ -30,29 +27,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 header {
-  height: 73px;
+  height: 50px;
   flex-direction: column;
   position: relative;
   display: flex;
-  flex: 1 0 auto;
   padding: 0;
   margin: 0;
   max-width: 100%;
   text-align: left;
   text-align: start;
-}
-.signupbanner {
-  height: 24px;
-  line-height: 24px;
-  background-color: #39d;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 14px;
-  display: block;
-  &:hover {
-    background: #4ae;
-  }
 }
 .masthead {
   padding: 0 8px;
@@ -70,6 +53,7 @@ header {
       font-size: 15px;
       font-weight: bold;
       line-height: 15px;
+      color: #eee;
       text-transform: uppercase;
     }
   }

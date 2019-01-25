@@ -30,7 +30,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .main-view {
-  height: calc(100% - 49px - 24px - 42px);
+  height: 100%;
   padding-left: 8px;
   padding-right: 8px;
   width: 100%;
@@ -48,6 +48,6 @@ export default {
   margin-top: 0 !important;
   height: 8px !important;
   top: 0 !important;
-  background: #eee;
+  background: #222;
 }
 </style>

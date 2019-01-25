@@ -109,7 +109,7 @@ export default {
   .signup-container {
     margin: 100px auto;
     width: 650px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     .tab-name {
       font-size: 20px;
     }

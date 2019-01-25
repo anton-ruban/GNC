@@ -1,12 +1,13 @@
 <template>
   <v-dialog :value="isOpenTradingPanelDialog" width="380" @input="toggleTradingPanelDialog($event)">
-    <v-layout class="white" column>
+    <v-card>
+    <v-layout column>
       <TitleBar title="交易面板" hideBack @close="toggleTradingPanelDialog(false)" />
       <div class="dialog-body">
         <div class="summary">
           <img src="../../assets/fu.png"/>
           <div class="text">
-            <span class="company-name">Canadian Pacific Railway Ltd</span>
+            <span class="company-name">GLD/CNY</span>
             <span class="desc">CP:xtse•CAD</span>
           </div>
           <v-btn icon small><v-icon>info</v-icon></v-btn>
@@ -43,7 +44,7 @@
             15 分钟延时 – 18:41:25
           </div>
           <div>
-            Toronto Stock Exchange
+            SPDB
             <AvailableStatus />
           </div>
         </div>
@@ -98,17 +99,18 @@
           <v-divider></v-divider>
           <div class="item-row">
             <span class="label">佣金</span>
-            <span>0 CAD</span>
+            <span>0 CNY</span>
           </div>
           <v-divider></v-divider>
           <div class="item-row">
             <span class="label">名义值</span>
-            <span>0 CAD</span>
+            <span>0 CNY</span>
           </div>
           <v-divider></v-divider>
         </div>
       </div>
     </v-layout>
+    </v-card>
   </v-dialog>
 </template>
 
@@ -225,7 +227,7 @@ export default {
       margin-bottom: 8px;
       padding-left: 8px;
       color: #888;
-      background: #ebebeb;
+      background: #222;
     }
   }
   .section-divider {

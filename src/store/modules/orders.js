@@ -20,27 +20,15 @@ const state = {
     data: [
       {
         value: false,
-        product: '英国富时100指数, 三月 2019年',
+        product: 'GLD/CNY',
         type: '限价',
         buySell: '买入',
         quantity: 2,
-        price: 6885.50,
-        currentPrice: 6918.50,
-        validPeriod: '取消前有效(G.T.C.)',
-        orderDate: '21-Jan-2019',
+        price: 281,
+        currentPrice: 282.89,
+        validPeriod: 'N/A',
+        orderDate: '30-Jan-2019',
         isPending: true,
-      },
-      {
-        value: false,
-        product: 'EURO STOXX® 50 Index - Mar 2019',
-        type: '限价',
-        buySell: '买入',
-        quantity: 2,
-        price: 6885.50,
-        currentPrice: 6918.50,
-        validPeriod: '取消前有效(G.T.C.)',
-        orderDate: '21-Jan-2019',
-        isPending: false
       },
     ]
   },

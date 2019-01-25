@@ -1,4 +1,4 @@
-# IPE
+# GNC
 
 ## Project setup
 ```

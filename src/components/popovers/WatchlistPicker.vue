@@ -5,14 +5,14 @@
     @input="toggleWatchlistPicker($event)"
     offset-y
   >
-    <v-btn slot="activator" depressed small color="#bbb">
-      我的观察列表
+    <v-btn slot="activator" depressed small color="#555">
+      我的行情列表
       <v-icon>{{isOpenWatchlistPicker ? 'expand_less' : 'expand_more'}}</v-icon>
     </v-btn>
-    <div class="picker">
+    <v-card class="picker">
       <div :class="[{ 'show-child': detailStandardWatch }, 'picker-container']">
         <div class="pick-section">
-          <TitleBar title="Select Watchlist" @close="toggleWatchlistPicker(false)" hideBack />
+          <TitleBar title="选择观察列表" @close="toggleWatchlistPicker(false)" hideBack />
           <v-divider></v-divider>
           <div class="content">
             <div class="subheader">My Watchlists</div>
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </v-card>
   </v-menu>
 </template>
 
@@ -96,7 +96,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .picker {
-  background: #fff;
   width: 320px;
   overflow: hidden;
   .picker-container {
@@ -112,21 +111,22 @@ export default {
       .content {
         .subheader {
           padding: 0 8px;
-          background-image: linear-gradient(to right,#ddd 0%,#eee 100%);
+          background:#666;
           height: 18px;
           line-height: 18px;
           font-size: 11px;
-          color: #666;
+          color: #888;
+          border-bottom: 1px solid #222;
           font-weight: bold;
         }
         .add-my-watchlists {
-          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #222;
           padding: 4px 8px;
           display: flex;
           align-items: center;
           cursor: pointer;
           &:hover {
-            background: #eee;
+            background: #555;
           }
           span {
             font-size: 12px;
@@ -144,7 +144,7 @@ export default {
         .list-body {
           padding: 0;
           .list-item {
-            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #222;
             padding: 4px 8px;
             max-width: 100%;
             overflow: hidden;
@@ -154,7 +154,7 @@ export default {
             cursor: pointer;
             white-space: nowrap;
             &:hover {
-              background: #eee;
+              background: #555;
             }
             .v-icon {
               font-size: 16px;

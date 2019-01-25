@@ -49,7 +49,7 @@ export default {
   padding-right: 8px;
   width: 100%;
   .head {
-    background: #ccc;
+    background: #444;
     padding: 0 8px;
   }
 }
@@ -66,6 +66,6 @@ export default {
   margin-left: 0 !important;
   width: 8px !important;
   left: 0 !important;
-  background: #ccc;
+  background: #444;
 }
 </style>

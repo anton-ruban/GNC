@@ -36,6 +36,6 @@ export default {
   margin-left: 0 !important;
   width: 8px !important;
   left: 0 !important;
-  background: #eee;
+  background: #222;
 }
 </style>

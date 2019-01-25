@@ -60,7 +60,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   .content-head {
-    background: #fff;
     .overview-head {
       padding: 4px;
       display: flex;
@@ -74,7 +73,7 @@ export default {
         }
         .instr-name {
           font-size: 12px;
-          color: #111;
+          color: #eee;
           line-height: 12px;
         }
         .instr-desc {
@@ -89,7 +88,7 @@ export default {
           color: #888;
           font-size: 12px;
           &:hover {
-            color: #111;
+            color: #eee;
           }
         }
         .v-btn {
@@ -106,8 +105,8 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
       .item {
         text-align: center;
         padding: 4px 8px;

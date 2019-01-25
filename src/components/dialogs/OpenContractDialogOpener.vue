@@ -5,9 +5,9 @@
       @input="toggleOpenContractDialog($event)"
       width="300"
     >
-      <v-btn class="open-button" depressed slot="activator" small>申请开通合约权限</v-btn>
+      <v-btn class="open-button" depressed slot="activator" small>合约订阅申请</v-btn>
       <v-card>
-        <TitleBar title="申请开通合约权限" hideBack hideClose/>
+        <TitleBar title="合约订阅申请" hideBack hideClose/>
         <v-card-text>
           尊敬的客户您好，如果您想开通合约权限，请发送邮件到***@***.com。 请注明账号用户名，交易所和合约名称，谢谢配合！
         </v-card-text>

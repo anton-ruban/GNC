@@ -54,13 +54,12 @@ export default {
 <style lang="scss" scoped>
 .market-price {
   text-align: center;
-  background: #fff;
   .graph-td {
     width: 132px;
     .graph {
       width: 100%;
       height: 8px;
-      background: #ddd;
+      background: #222;
       .left {
         width: 50%;
         display: flex;

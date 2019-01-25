@@ -21,10 +21,10 @@
             <template slot="items" slot-scope="props">
               <tr @click="selectRow(props.item)" :class="[{'active': selectedContractId === props.item.id}]">
                 <td valign="middle"><img src="../../assets/fu.png" width="16" class="product-icon"/>{{ props.item.product }}</td>
-                <td class="text-xs-right">{{ props.item.sellAmount > 0 ? props.item.sellAmount : '-' }}</td>
+                <td class="text-xs-right">{{props.item.sellAmount}}</td>
                 <td class="text-xs-right"><div class="clickable-div" @click="toggleTradingPanelDialog(true)">{{ props.item.sellingPrice }}</div></td>
                 <td class="text-xs-right"><div class="clickable-div" @click="toggleTradingPanelDialog(true)">{{ props.item.buyingPrice }}</div></td>
-                <td class="text-xs-right">{{ props.item.buyAmount > 0 ? props.item.buyAmount : '-' }}</td>
+                <td class="text-xs-right">{{props.item.buyAmount}}</td>
                 <td class="text-xs-right">{{ props.item.marketPrice }}<AvailableStatus /></td>
                 <td class="text-xs-right">{{ props.item.percent }}</td>
                 <td class="text-xs-right">{{ props.item.fallAndRaise }}</td>
@@ -85,7 +85,7 @@ export default {
   height: 100%;
   .head {
     border: 0;
-    background-color: #ccc;
+    background-color: #444;
     padding-left: 8px;
     padding-right: 8px;
     height: 32px;
@@ -96,10 +96,10 @@ export default {
   .content {
     padding: 8px;
     padding-top: 0;
-    background-color: #ccc;
+    background-color: #444;
     height: calc(100% - 32px);
     .content-section {
-      background: #fff;
+      background: #333;
       width: 100%;
       height: 100%;
       .content-head {
@@ -114,15 +114,15 @@ export default {
         height: calc(100% - 40px);
         overflow: auto;
         .active {
-          background: #eee;
+          background: #444;
         }
         .clickable-div {
           cursor: pointer;
-          background: #e5e5e5;
+          background: #666;
           padding-right: 5px;
           border-radius: 2px;
           &:hover {
-            background: #d5d5d5;
+            background: #888;
           }
         }
         .product-icon {

@@ -107,7 +107,7 @@ export default {
   width: 100%;
   .head {
     border: 0;
-    background-color: #ccc;
+    background-color: #444;
     padding-left: 8px;
     padding-right: 8px;
     display: flex;
@@ -119,7 +119,7 @@ export default {
       font-size: 15px;
       text-transform: none;
       &:hover {
-        color: #111;
+        color: #eee;
       }
     }
   }
@@ -127,10 +127,10 @@ export default {
     padding: 8px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #ccc;
+    background-color: #444;
     height: calc(100% - 32px);
     .content-section {
-      background: #fff;
+      background: #333;
       width: 100%;
       height: calc(100% - 8px);
       overflow: auto;
@@ -146,6 +146,7 @@ export default {
         height: 20px;
         font-size: 11px;
         font-weight: bold;
+        background: #666 !important;
       }
       .colored-text {
         color: #e93e33;

@@ -8,7 +8,7 @@ const state = {
   ],
   selectedWatchTabIndex: 0,
   watchTabs: [
-    {name: '观察列表'},
+    {name: '观察行情列表'},
     // {name: '提示'}
   ],
   selectedBottomTabIndex: 0,

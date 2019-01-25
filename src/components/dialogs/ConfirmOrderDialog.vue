@@ -6,7 +6,7 @@
         <div class="summary">
           <img src="../../assets/fu.png"/>
           <div class="text">
-            <span class="company-name">Canadian Pacific Railway Ltd</span>
+            <span class="company-name">GLD/CNY</span>
             <span class="desc">CP:xtse•CAD</span>
           </div>
         </div>
@@ -14,12 +14,12 @@
         <div class="details">
           <div class="item-row">
             <span class="label">佣金</span>
-            <span>0 CAD</span>
+            <span>0 CNY</span>
           </div>
           <v-divider></v-divider>
           <div class="item-row">
             <span class="label">名义值</span>
-            <span>0 CAD</span>
+            <span>0 CNY</span>
           </div>
           <v-divider></v-divider>
         </div>

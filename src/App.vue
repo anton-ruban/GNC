@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app dark>
     <div id="app">
       <MainPage />
       <TradingPanelDialog/>
@@ -38,7 +38,7 @@ html, body {
 }
 
 html {
-  color: #111;
+  color: #eee;
   font-family: "HelveticaNeue","Helvetica Neue","sans-serif",Arial;
   font-size: 8px;
 }
@@ -51,7 +51,7 @@ body {
   background: #eee;
   font-size: 12px;
   line-height: 20px;
-  color: #111;
+  color: #eee;
 }
 
 a {
@@ -65,7 +65,7 @@ a {
   height: 100%;
   min-width: 1024px;
   min-height: 300px;
-  background-color: #f5f9fe;
+  background-color: #222;
   overflow: auto;
 }
 button, select {
@@ -88,7 +88,7 @@ button, input, optgroup, select, textarea {
   width: 100%;
   padding: 6.5px 8px;
   background: #e5e5e5;
-  color: #111;
+  color: #eee;
   border-radius: 2px;
   font-weight: bold;
   text-align: center;
@@ -98,10 +98,12 @@ button, input, optgroup, select, textarea {
 .v-table {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  background: none !important;
   thead {
     tr {
       height: 25px !important;
       padding: 0 8px !important;
+      border: 1px solid #222 !important;
       &.v-datatable__progress {
         height: auto !important;
       }
@@ -111,6 +113,12 @@ button, input, optgroup, select, textarea {
     }
   }
   tbody {
+    tr {
+      border: 1px solid #222 !important;
+      &:hover {
+        background: #444 !important;
+      }
+    }
     td {
       height: 25px !important;
       font-size: 12px !important;

@@ -36,7 +36,7 @@ export default {
       white-space: nowrap;
     }
     &:hover {
-      color: #111;
+      color: #eee;
     }
   }
 }

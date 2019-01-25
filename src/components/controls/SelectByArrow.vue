@@ -36,7 +36,6 @@ export default {
     }
   }
   span {
-    color: #333;
     white-space: nowrap;
   }
 }

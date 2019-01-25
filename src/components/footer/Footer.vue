@@ -12,19 +12,19 @@
           </button>
         </div>
         <div class="flex-container">
-          <span class="info-label">Cash available</span>
+          <span class="info-label">可用现金</span>
           <span class="info-text">99,746.39</span>
         </div>
         <div class="flex-container">
-          <span class="info-label">Account value</span>
+          <span class="info-label">账户总值</span>
           <span class="info-text">90,052.30</span>
         </div>
         <div class="flex-container">
-          <span class="info-label">Initial margin available</span>
+          <span class="info-label">初始保证金可用</span>
           <span class="info-text">68,119.74</span>
         </div>
         <div class="flex-container">
-          <span class="info-label">Margin utilisation</span>
+          <span class="info-label">保证金占用比例</span>
           <span class="info-progress-bg">
             <span class="progress-bar" style="width: 75.64%;"></span>
           </span>
@@ -53,7 +53,7 @@ footer {
   min-height: 42px;
   margin-left: 8px;
   margin-right: 8px;
-  background-color: #ccc;
+  background-color: #444;
   flex: 0 0 auto;
   padding: 0;
   .footer-body {
@@ -65,8 +65,6 @@ footer {
     text-align: start;
     .acctsummary {
       padding: 8px 8px;
-      border-right: 1px solid #b7b7b7;
-      border-left: 1px solid #b7b7b7;
       overflow: hidden;
       padding-bottom: 16.5px;
       align-items: center;
@@ -84,7 +82,7 @@ footer {
         .trial {
           width: 170px;
           line-height: 20px;
-          outline: 1px solid #e5e5e5;
+          outline: 1px solid #555;
           outline-offset: -1px;
           display: flex;
           padding: 0 8px;
@@ -95,9 +93,10 @@ footer {
         .info-button-box {
           width: 24px;
           height: 24px;
+          background: #555;
           &:hover {
-            background: #d5d5d5;
-            color: #111;
+            background: #666;
+            color: #eee;
           }
         }
         .info-label {
@@ -113,7 +112,7 @@ footer {
           position: relative;
           .progress-bar {
             position: absolute;
-            background: #ddd;
+            background: #222;
             width: 75.67%;
             right: 0;
             height: 0.67rem;
@@ -125,9 +124,9 @@ footer {
   .data-disclaimer-link {
     color: #999;
     text-transform: uppercase;
-    background-color: #eee;
+    background-color: #222;
     width: 100%;
-    border-top: 1px solid #b7b7b7;
+    border-top: 1px solid #444;
     position: absolute;
     z-index: 1;
     bottom: 0;
@@ -137,6 +136,7 @@ footer {
     font-size: 9px;
     button {
       display: inline-block;
+      background: none;
       width: auto;
       vertical-align: baseline;
       color: inherit;

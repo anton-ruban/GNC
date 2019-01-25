@@ -49,10 +49,10 @@ nav {
     white-space: nowrap;
     padding: 6.5px 8px;
     &:hover {
-      color: #111;
+      color: #eee;
     }
     &.router-link-active {
-      color: #111;
+      color: #eee;
     }
   }
 }
@@ -63,8 +63,8 @@ nav {
     width: 180px;
     padding-left: 28px;
     text-overflow: ellipsis;
-    background-color: #666;
-    color: #ddd;
+    background-color: #fff;
+    color: #000;
     outline: 0;
     border: 1px solid #ddd;
     border-radius: 0;
@@ -72,12 +72,11 @@ nav {
     height: 24px;
     padding-right: 36px;
     &::placeholder {
-      color: #aaa;
+      color: #888;
       font-style: italic;
     }
     &:focus {
-      background: #888;
-      color: #fff;
+      background: #fff;
     }
     &::-webkit-search-cancel-button {
       -webkit-appearance: none;
@@ -90,7 +89,7 @@ nav {
     left: 8px;
     font-size: 16px;
     height: 20px;
-    color: #ddd;
+    color: #000;
     line-height: 24px;
     pointer-events: none;
   }
@@ -103,7 +102,7 @@ nav {
     padding: 0;
     cursor: pointer;
     i {
-      color: #aaa;
+      color: #888;
     }
   }
 }
