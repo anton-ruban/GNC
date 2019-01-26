@@ -1,34 +1,36 @@
 <template>
   <v-dialog :value="isOpenConfirmOrderDialog" width="380" @input="toggleConfirmOrderDialog($event)">
-    <v-layout class="white" column>
-      <TitleBar title="确认订单" hideBack hideClose/>
-      <div class="dialog-body">
-        <div class="summary">
-          <img src="../../assets/fu.png"/>
-          <div class="text">
-            <span class="company-name">GLD/CNY</span>
-            <span class="desc">CP:xtse•CAD</span>
-          </div>
-        </div>
-        <v-divider></v-divider>
-        <div class="details">
-          <div class="item-row">
-            <span class="label">佣金</span>
-            <span>0 CNY</span>
+    <v-card>
+      <v-layout column>
+        <TitleBar title="确认订单" hideBack hideClose/>
+        <div class="dialog-body">
+          <div class="summary">
+            <img src="../../assets/fu.png"/>
+            <div class="text">
+              <span class="company-name">GLD/CNY</span>
+              <span class="desc">CP:xtse•CAD</span>
+            </div>
           </div>
           <v-divider></v-divider>
-          <div class="item-row">
-            <span class="label">名义值</span>
-            <span>0 CNY</span>
+          <div class="details">
+            <div class="item-row">
+              <span class="label">佣金</span>
+              <span>0 CNY</span>
+            </div>
+            <v-divider></v-divider>
+            <div class="item-row">
+              <span class="label">名义值</span>
+              <span>0 CNY</span>
+            </div>
+            <v-divider></v-divider>
           </div>
-          <v-divider></v-divider>
+          <div class="action-bar">
+            <v-btn small depressed @click="toggleConfirmOrderDialog(false)">取消</v-btn>
+            <v-btn small depressed color="#39d" class="ok-button" @click="toggleTradingPanelDialog(false)">确认</v-btn>
+          </div>
         </div>
-        <div class="action-bar">
-          <v-btn small depressed color="#ebebeb" @click="toggleConfirmOrderDialog(false)">取消</v-btn>
-          <v-btn small depressed color="#39d" class="ok-button" @click="toggleTradingPanelDialog(false)">确认</v-btn>
-        </div>
-      </div>
-    </v-layout>
+      </v-layout>
+    </v-card>
   </v-dialog>
 </template>
 
