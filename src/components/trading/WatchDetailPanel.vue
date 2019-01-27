@@ -18,7 +18,11 @@
         </div>
       </template>
       <template v-else-if="selectedWatchDetailTabIndex === 1">
-        <highcharts :constructor-type="'stockChart'" :options="chartOptions"></highcharts>
+        <div class="chart-section">
+          <div class="chart-view">
+            <highcharts :constructor-type="'stockChart'" :options="chartOptions" ref="highcharts"></highcharts>
+          </div>
+        </div>
       </template>
     </div>
   </div>
@@ -1243,12 +1247,12 @@ export default {
     .scroll-panel {
       flex: 1 1 auto;
       overflow: auto;
-      .chart-section {
-        position: relative;
-        .chart-view {
-          position: absolute;
-          width: 100%;
-        }
+    }
+    .chart-section {
+      position: relative;
+      .chart-view {
+        position: absolute;
+        width: 100%;
       }
     }
   }
