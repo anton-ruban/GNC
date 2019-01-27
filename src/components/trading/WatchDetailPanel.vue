@@ -11,7 +11,9 @@
           <DeepMarketPrice />
           <div class="divider"></div>
           <div class="chart-section">
-            <highcharts :constructor-type="'stockChart'" :options="chartOptions"></highcharts>
+            <div class="chart-view">
+              <highcharts :constructor-type="'stockChart'" :options="chartOptions" ref="highcharts"></highcharts>
+            </div>
           </div>
         </div>
       </template>
@@ -1197,6 +1199,10 @@ export default {
   methods: {
     selectWatchDetailTab(e) {
       this.$store.commit('tabs/selectWatchDetailTab', e);
+    },
+    resizeChart(w) {
+      let chart = this.$refs.highcharts.chart;
+      chart.setSize(w, 'auto');
     }
   },
   computed: {
@@ -1238,8 +1244,11 @@ export default {
       flex: 1 1 auto;
       overflow: auto;
       .chart-section {
-        width: 100%;
-        height: calc(100% - 110px);
+        position: relative;
+        .chart-view {
+          position: absolute;
+          width: 100%;
+        }
       }
     }
   }
