@@ -18,8 +18,8 @@ const state = {
       options: ['取消前有效(G.T.C.) 1', '取消前有效(G.T.C.) 2'],
     },
     amount: { stepValue: 1, count: 0},
-    price: {stepValue: 0.01, count: 110.05},
-    stopLimitPrice: {stepValue: 0.01, count: 110.05},
+    price: {stepValue: 0.01, count: 282.89},
+    stopLimitPrice: {stepValue: 0.01, count: 282.89},
     takeProfit: {stepValue: 0.01, count: 0},
     stopLoss: {stepValue: 0.01, count: 0},
   }

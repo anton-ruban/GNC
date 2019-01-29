@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 import watch from './modules/watch';
 import positions from './modules/positions';
 import marketPrices from './modules/marketPrices';
-import tradingPanel from './modules/tradingPanel';
+import trading from './modules/trading';
 import tabs from './modules/tabs';
 import auth from './modules/auth';
 import orders from './modules/orders';
@@ -17,7 +17,7 @@ export default new Vuex.Store({
     watch,
     positions,
     marketPrices,
-    tradingPanel,
+    trading,
     tabs,
     auth,
     orders,

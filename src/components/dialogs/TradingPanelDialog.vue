@@ -7,8 +7,8 @@
         <div class="summary">
           <img src="../../assets/fu.png"/>
           <div class="text">
-            <span class="company-name">GLD/CNY</span>
-            <span class="desc">SPBD</span>
+            <span class="company-name">{{selectedContract.product}}</span>
+            <span class="desc">{{selectedContract.description}}</span>
           </div>
           <v-btn icon small><v-icon>info</v-icon></v-btn>
           <v-btn icon small><v-icon>money</v-icon></v-btn>
@@ -18,23 +18,23 @@
         <div class="summary-table">
           <div class="item">
             <div class="label">卖出价</div>
-            <div class="value">255.270</div>
+            <div class="value">{{selectedContract.sellingPrice}}</div>
           </div>
           <div class="item">
             <div class="label">买入价</div>
-            <div class="value">255.270</div>
+            <div class="value">{{selectedContract.buyingPrice}}</div>
           </div>
           <div class="item">
             <div class="label">最新价</div>
-            <div class="value">255.270</div>
+            <div class="value">{{overviews[selectedOverviewId].latestPrice.value}}</div>
           </div>
           <div class="item">
-            <div class="label">净涨跌</div>
-            <div class="value">255.270</div>
+            <div class="label">涨跌价</div>
+            <div class="value">{{overviews[selectedOverviewId].riseAndFall.value}}</div>
           </div>
           <div class="item">
             <div class="label">涨跌幅%</div>
-            <div class="value">255.270</div>
+            <div class="value">{{overviews[selectedOverviewId].percentChange.value}}</div>
           </div>
         </div>
         <v-divider></v-divider>
@@ -119,7 +119,7 @@ import TitleBar from '../controls/TitleBar.vue';
 import AvailableStatus from '../controls/AvailableStatus.vue';
 import SelectByArrow from '../controls/SelectByArrow.vue';
 import Counter from '../controls/Counter.vue';
-import { mapState } from 'vuex';
+import { mapState, mapGetters } from 'vuex';
 
 export default {
   name: 'TradingPanelDialog',
@@ -131,30 +131,37 @@ export default {
   },
   methods: {
     toggleConfirmOrderDialog (e) {
-      this.$store.commit('tradingPanel/toggleConfirmOrderDialog', e);
+      this.$store.commit('trading/toggleConfirmOrderDialog', e);
     },
     toggleAddStopPanel(e) {
-      this.$store.commit('tradingPanel/toggleAddStopPanel', e);
+      this.$store.commit('trading/toggleAddStopPanel', e);
     },
     toggleTradingPanelDialog (e) {
-      this.$store.commit('tradingPanel/toggleTradingPanelDialog', e);
+      this.$store.commit('trading/toggleTradingPanelDialog', e);
     },
     toggleShowDetails (e) {
-      this.$store.commit('tradingPanel/toggleShowDetails', e);
+      this.$store.commit('trading/toggleShowDetails', e);
     },
     selectNewTradingOption (newTradingKey, e) {
-      this.$store.commit('tradingPanel/selectNewTradingOption', {newTradingKey, selectedIndex: e});
+      this.$store.commit('trading/selectNewTradingOption', {newTradingKey, selectedIndex: e});
     },
     selectNewTradingCount (newTradingKey, e) {
-      this.$store.commit('tradingPanel/selectNewTradingCount', {newTradingKey, newCount: e});
+      this.$store.commit('trading/selectNewTradingCount', {newTradingKey, newCount: e});
     }
   },
   computed: {
-    ...mapState('tradingPanel', {
+    ...mapState('trading', {
       isOpenTradingPanelDialog: state => state.isOpenTradingPanelDialog,
       isAddStopPanel: state => state.isAddStopPanel,
       isShowDetails: state => state.isShowDetails,
       newTrading: state => state.newTrading
+    }),
+    ...mapState('overview', {
+      overviews: state => state.overviews,
+      selectedOverviewId: state => state.selectedOverviewId
+    }),
+    ...mapGetters('contracts', {
+      selectedContract: 'selectedContract',
     })
   }
 }

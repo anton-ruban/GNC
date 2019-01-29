@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     toggleTradingPanelDialog (e) {
-      this.$store.commit('tradingPanel/toggleTradingPanelDialog', e);
+      this.$store.commit('trading/toggleTradingPanelDialog', e);
     }
   },
   computed: {

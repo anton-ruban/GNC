@@ -26,9 +26,9 @@
             <td class="text-xs-right">{{ props.item.close }} <img src="../../assets/real-time.png" class="realtime-icon"/></td>
             <td class="text-xs-center"><v-btn depressed small color="#e5e5e5">ADD</v-btn></td>
             <td class="text-xs-center"><v-btn depressed small color="#e5e5e5">ADD</v-btn></td>
-            <td v-bind:class="[{ positive: props.item.pl > 0 }, 'text-xs-right', 'colored-text']">{{ props.item.pl }} USD</td>
-            <td v-bind:class="[{ positive: props.item.plUSD > 0 }, 'text-xs-right', 'colored-text']">{{ props.item.plUSD }} USD</td>
-            <td v-bind:class="[{ positive: props.item.price > 0 }, 'text-xs-right', 'colored-text']">{{ props.item.price }} USD</td>
+            <td v-bind:class="[{ positive: props.item.pl > 0 }, 'text-xs-right', 'colored-text']">{{ props.item.pl }}</td>
+            <td v-bind:class="[{ positive: props.item.plUSD > 0 }, 'text-xs-right', 'colored-text']">{{ props.item.plUSD }}</td>
+            <td v-bind:class="[{ positive: props.item.price > 0 }, 'text-xs-right', 'colored-text']">{{ props.item.price }}</td>
             <td class="text-xs-right">{{ props.item.exposure }}</td>
             <td>
               <v-btn depressed small color="#e5e5e5">CLOSE</v-btn>

@@ -45,17 +45,17 @@ export default {
   },
   methods: {
     toggleTradingPanelDialog (e) {
-      this.$store.commit('tradingPanel/toggleTradingPanelDialog', e);
+      this.$store.commit('trading/toggleTradingPanelDialog', e);
     },
     toggleConfirmOrderDialog (e) {
-      this.$store.commit('tradingPanel/toggleConfirmOrderDialog', e);
+      this.$store.commit('trading/toggleConfirmOrderDialog', e);
     },
     toggleShowDetails (e) {
-      this.$store.commit('tradingPanel/toggleShowDetails', e);
+      this.$store.commit('trading/toggleShowDetails', e);
     }
   },
   computed: {
-    ...mapState('tradingPanel', {
+    ...mapState('trading', {
       isOpenConfirmOrderDialog: state => state.isOpenConfirmOrderDialog,
       isAddStopPanel: state => state.isAddStopPanel,
       isShowDetails: state => state.isShowDetails,

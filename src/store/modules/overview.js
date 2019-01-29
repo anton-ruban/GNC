@@ -5,6 +5,40 @@ const state = {
     overview1: {
       latestPrice: {
         label: '最新价',
+        value: 281.79
+      },
+      riseAndFall: {
+        label: '净涨跌',
+        value: -4.23
+      },
+      percentChange: {
+        label: '涨跌幅%',
+        value: '-1.5%',
+      },
+      open: {
+        label: '开市价',
+        value: 286.02,
+      },
+      low: {
+        label: '最低价',
+        value: 286.02,
+      },
+      expireDate: {
+        label: '到期日',
+        value: '2-Mar-2019',
+      },
+      lastUpdate: {
+        label: '上次更新',
+        value: new Date().getHours() + ":" + new Date().getMinutes(),
+      },
+      tradingAmount: {
+        label: '交易量',
+        value: 20
+      }
+    },
+    overview2: {
+      latestPrice: {
+        label: '最新价',
         value: 282.89
       },
       riseAndFall: {
@@ -34,44 +68,6 @@ const state = {
       tradingAmount: {
         label: '交易量',
         value: 20
-      }
-    },
-    overview2: {
-      latestPrice: {
-        label: '最新价',
-        value: 8703.25
-      },
-      riseAndFall: {
-        label: '净涨跌',
-        value: 39.45
-      },
-      percentChange: {
-        label: '涨跌幅%',
-        value: '0.53%'
-      },
-      open: {
-        label: '开市价',
-        value: 8703.26,
-      },
-      low: {
-        label: '最低价',
-        value: 8703.11,
-      },
-      high: {
-        label: '最高价',
-        value: 8703.55,
-      },
-      expireDate: {
-        label: '到期日',
-        value: '14-Mar-2019',
-      },
-      lastUpdate: {
-        label: '上次更新',
-        value: '15:07:28',
-      },
-      tradingAmount: {
-        label: '交易量',
-        value: 25
       }
     },
     overview3: {
