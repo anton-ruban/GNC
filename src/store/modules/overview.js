@@ -5,35 +5,31 @@ const state = {
     overview1: {
       latestPrice: {
         label: '最新价',
-        value: 1278.32
+        value: 282.89
       },
       riseAndFall: {
         label: '净涨跌',
-        value: 39.45
+        value: 9.57
       },
       percentChange: {
         label: '涨跌幅%',
-        value: '0.53%'
+        value: '3.5%',
       },
       open: {
         label: '开市价',
-        value: 1278.35,
+        value: 273.32,
       },
       low: {
         label: '最低价',
-        value: 1278.28,
-      },
-      high: {
-        label: '最高价',
-        value: 1278.45,
+        value: 273.32,
       },
       expireDate: {
         label: '到期日',
-        value: '14-Mar-2019',
+        value: '2-Mar-2019',
       },
       lastUpdate: {
         label: '上次更新',
-        value: '15:07:28',
+        value: new Date().getHours() + ":" + new Date().getMinutes(),
       },
       tradingAmount: {
         label: '交易量',

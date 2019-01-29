@@ -8,7 +8,7 @@
             <img src="../../assets/fu.png"/>
             <div class="text">
               <span class="company-name">GLD/CNY</span>
-              <span class="desc">CP:xtse•CAD</span>
+              <span class="desc">SPBD</span>
             </div>
           </div>
           <v-divider></v-divider>

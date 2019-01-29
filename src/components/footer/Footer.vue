@@ -32,10 +32,6 @@
         </div>
       </div>
     </div>
-    <div class="data-disclaimer-link">
-      Market data provided by Saxo Bank • 
-      <button class="btn btn--inline btn--link" type="button">Data Disclaimer</button>
-    </div>
   </footer>
 </template>
 
@@ -50,11 +46,12 @@ export default {
 <style lang="scss" scoped>
 footer {
   position: relative;
-  min-height: 42px;
+  min-height: 34px;
   margin-left: 8px;
   margin-right: 8px;
   background-color: #444;
   flex: 0 0 auto;
+  margin-bottom: 8px;
   padding: 0;
   .footer-body {
     display: flex;
@@ -66,13 +63,11 @@ footer {
     .acctsummary {
       padding: 8px 8px;
       overflow: hidden;
-      padding-bottom: 16.5px;
       align-items: center;
       display: flex;
       flex: 1 0 auto;
       margin: 0;
       margin-top: -8px;
-      padding-bottom: 16.5px;
       .flex-container {
         display: flex;
         align-items: center;
@@ -118,36 +113,6 @@ footer {
             height: 0.67rem;
           }
         }
-      }
-    }
-  }
-  .data-disclaimer-link {
-    color: #999;
-    text-transform: uppercase;
-    background-color: #222;
-    width: 100%;
-    border-top: 1px solid #444;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    line-height: 11px;
-    text-align: right;
-    text-align: end;
-    font-size: 9px;
-    button {
-      display: inline-block;
-      background: none;
-      width: auto;
-      vertical-align: baseline;
-      color: inherit;
-      text-transform: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      padding: 0;
-      line-height: inherit;
-      &:hover {
-        color: #39d;
-        background: transparent;
       }
     }
   }
