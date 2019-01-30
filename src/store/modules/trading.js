@@ -4,25 +4,26 @@ const state = {
   isOpenConfirmOrderDialog: false,
   isAddStopPanel: false,
   isShowDetails: false,
-  newTrading: {
+  tradeOptions: {
     type: {
       selectedIndex: 0,
-      options: ['止损', '浮动止损', '止损限价'],
+      options: ['限价', '止损', '市价'],
     },
     buySell: {
       selectedIndex: 0,
-      options: ['买入1', '买入2'],
+      options: ['买入', '卖出'],
     },
     validPeriod: {
       selectedIndex: 0,
-      options: ['取消前有效(G.T.C.) 1', '取消前有效(G.T.C.) 2'],
+      options: ['取消前有效(G.T.C.)', '当日有效订单', '一周', '一个月', '周末', '月末'],
     },
     amount: { stepValue: 1, count: 0},
     price: {stepValue: 0.01, count: 282.89},
     stopLimitPrice: {stepValue: 0.01, count: 282.89},
     takeProfit: {stepValue: 0.01, count: 0},
     stopLoss: {stepValue: 0.01, count: 0},
-  }
+  },
+  newTrade: {}
 }
 
 // getters
@@ -35,6 +36,9 @@ const actions = {
 
 // mutations
 const mutations = {
+  updateNewTrade(state, newTrade) {
+    state.newTrade = newTrade;
+  },
   toggleConfirmOrderDialog(state, isOpen) {
     state.isOpenConfirmOrderDialog = isOpen;
   },
@@ -51,10 +55,10 @@ const mutations = {
     state.isShowDetails = isOpen;
   },
   selectNewTradingOption(state, {newTradingKey, selectedIndex}) {
-    state.newTrading[newTradingKey].selectedIndex = selectedIndex;
+    state.tradeOptions[newTradingKey].selectedIndex = selectedIndex;
   },
   selectNewTradingCount(state, {newTradingKey, newCount}) {
-    state.newTrading[newTradingKey].count = newCount;
+    state.tradeOptions[newTradingKey].count = newCount;
   }
 }
 

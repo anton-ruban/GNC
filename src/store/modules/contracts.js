@@ -31,7 +31,7 @@ const state = {
           percent: '',
           fallAndRaise: '',
           overviewId: 'overview1',
-          description: 'TF9 • GBP'
+          description: 'SPBD'
         },
         {
           id: 'contract2',
@@ -45,7 +45,7 @@ const state = {
           percent: '',
           fallAndRaise: '',
           overviewId: 'overview2',
-          description: 'TF9 • GBP'
+          description: 'SPBD'
         },
       ],
     }
